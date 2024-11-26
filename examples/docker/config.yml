@@ -1,5 +1,5 @@
 global:
-  sequences_file: /mnt/fasta.fa
+  sequences_file: /mnt/fasta.fa2
   prefix: /mnt/output
 seqvec_embeddings:
   type: embed
