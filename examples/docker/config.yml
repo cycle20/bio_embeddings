@@ -1,14 +1,14 @@
 global:
-  sequences_file: /mnt/fasta.fa2
+  sequences_file: /mnt/fasta.fa
   prefix: /mnt/output
-seqvec_embeddings:
+prottrans_t5_xl_u50_embeddings:
   type: embed
-  protocol: seqvec
+  protocol: prottrans_t5_xl_u50
   reduce: True
 tsne_projections:
   type: project
   protocol: tsne
-  depends_on: seqvec_embeddings
+  depends_on: prottrans_t5_xl_u50_embeddings
 plotly_visualization:
   type: visualize
   protocol: plotly
