@@ -4,6 +4,7 @@ global:
 prottrans_t5_xl_u50_embeddings:
   type: embed
   protocol: prottrans_t5_xl_u50
+  model_directory: /.cache/bio_embeddings/prottrans_t5_xl_u50/model_directory
   reduce: True
 tsne_projections:
   type: project
